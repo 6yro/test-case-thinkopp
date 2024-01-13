@@ -1,0 +1,28 @@
+.slider {
+  &__arrow {
+    height: 47px;
+    width: 181px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    position: absolute;
+    bottom: -30px;
+    transform: translateY(100%);
+
+    &_prev {
+      left: 0;
+      background-image: url("../../../assets/uikit/arrows/arrow_left.svg");
+      &:hover {
+        background-image: url("../../../assets/uikit/arrows/arrow_left_hover.svg");
+      }
+    }
+    &_next {
+      right: 0;
+      background-image: url("../../../assets/uikit/arrows/arrow_right.svg");
+      &:hover {
+        background-image: url("../../../assets/uikit/arrows/arrow_right_hover.svg");
+      }
+    }
+  }
+}

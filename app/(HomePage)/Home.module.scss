@@ -1,0 +1,25 @@
+@use "variables";
+
+.materials {
+  margin-top: 130px;
+  margin-bottom: 100px;
+  &__headingBlock {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 54px;
+  }
+
+  &__descr {
+    color: variables.$black;
+    font-weight: 300;
+    max-width: 840px;
+  }
+
+  &__card {
+    &:hover {
+      color: variables.$emerald;
+    }
+  }
+}

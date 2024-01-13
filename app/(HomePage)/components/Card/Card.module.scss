@@ -1,0 +1,46 @@
+@use "variables";
+
+.card {
+  max-width: 344px;
+  &:hover {
+    .card__title {
+      color: variables.$emerald;
+    }
+  }
+
+  &__imgWrapper {
+    max-width: 344px;
+    width: 100vw;
+    margin-bottom: 32px;
+    position: relative;
+    height: 344px;
+    overflow: hidden;
+
+    &#types__ {
+      &1 {
+        border-radius: 0px 220px;
+      }
+      &2 {
+        border-radius: 220px 0px;
+      }
+      &3 {
+        border-radius: 600px;
+      }
+      &4 {
+        border-radius: 600px;
+        max-width: 644px;
+      }
+      &5 {
+        border-radius: 120px 0px;
+      }
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+}
