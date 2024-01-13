@@ -12,7 +12,7 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ types, img, title, date }) => {
   return (
-    <article className={s.card}>
+    <article className={s.card} id={s[types]}>
       <Link href="#">
         <div className={s.card__imgWrapper} id={s[types]}>
           <Image
